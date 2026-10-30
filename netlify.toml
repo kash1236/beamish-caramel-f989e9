@@ -1,0 +1,4 @@
+# Deploys from the GitHub repo (kash1236/beamish-caramel-f989e9) on every push to main.
+[build]
+  publish = "."
+  command = ""
