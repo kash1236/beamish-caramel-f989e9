@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>beamish-caramel-f989e9</title>
-    <meta
-      name="description"
-      content="Landing page for beamish-caramel-f989e9"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="container">
-      <div class="card">
-        <p class="eyebrow">Welcome</p>
-        <h1>beamish-caramel-f989e9</h1>
-        <p class="subtitle">
-          Your website is live and ready to be customized.
-        </p>
-        <a href="https://github.com/kash1236/beamish-caramel-f989e9" class="button">
-          View GitHub Repo
-        </a>
-      </div>
-    </main>
-  </body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><title>CareerCompass – Student Career Guidance Platform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="style.css"></head><body>
+<nav><b>🧭 CareerCompass</b><button class="on" data-s="home">Home</button><button data-s="adv">Career Advisor</button><button data-s="about">How it works</button><button id="th">🌓</button></nav>
+<div class="w">
+<section id="home" class="on"><div class="hero"><span class="tag" style="color:var(--ac)">For every stream · Business · Tech · Arts · Science</span>
+<h1>Find careers that fit <span>who you are</span>, not just your marks</h1>
+<p>CareerCompass looks at your skills, interests, experience and priorities to match you with careers, measure your readiness and build a 90-day plan.</p>
+<button class="btn" data-go="adv">Get my career report →</button> <button class="btn o" data-go="about">How it works</button></div>
+<div class="grid"><div class="c"><div class="ic">🧠</div><h3>Interest profile</h3><p>A six-type interest map (Holland RIASEC) shows what kind of work energises you.</p></div>
+<div class="c"><div class="ic">🛠️</div><h3>Skill-gap analysis</h3><p>See which skills you have and exactly which ones each career still needs.</p></div>
+<div class="c"><div class="ic">📈</div><h3>Readiness forecast</h3><p>Projects your job-readiness over 12 months based on the hours you can commit.</p></div>
+<div class="c"><div class="ic">⚖️</div><h3>Fair for every stream</h3><p>Grades count only a little for creative and business roles, and more for research and finance.</p></div></div></section>
+
+<section id="adv"><div class="lay"><div class="c">
+<div class="fh" style="margin-top:0">1 · About you</div>
+<label class="l">Year of study</label><select id="yr" style="width:100%;padding:8px;border-radius:9px;border:1px solid var(--br);background:var(--bg);color:var(--tx)"><option>1</option><option>2</option><option selected>3</option><option>4</option><option value="5">Graduate</option></select>
+<label class="l">CGPA /10: <b id="vg">7.0</b> <label style="display:inline"><input type="checkbox" id="sg"> skip</label></label><input type="range" id="cg" min="4" max="10" step="0.1" value="7">
+<label class="l">Hours/week you can give to upskilling: <b id="vh">8</b></label><input type="range" id="hr" min="2" max="30" value="8">
+<div class="fh">2 · Skills you already have</div><div class="chips" id="sk"></div>
+<div class="fh">3 · What do you enjoy? (1–5)</div><div id="ri"></div>
+<div class="fh">4 · Experience so far</div><div class="n4"><div><span class="l">Internships</span><input type="number" id="in" min="0" max="10" value="0"></div><div><span class="l">Projects</span><input type="number" id="pj" min="0" max="20" value="1"></div><div><span class="l">Certifications</span><input type="number" id="ce" min="0" max="20" value="0"></div><div><span class="l">Leadership / clubs</span><input type="number" id="ld" min="0" max="10" value="0"></div></div>
+<div class="fh">5 · Top priorities (pick up to 2)</div><div class="chips" id="pr"></div>
+<button class="btn" id="go" style="width:100%;margin-top:18px">Generate my report</button></div>
+<div id="out"><div class="c empty">📊<br>Your personalised report will appear here.</div></div></div></section>
+
+<section id="about"><h2 style="margin-top:6px">Why this approach</h2><div class="c"><p>Marks and attendance describe the past, not your future in a career. Business, design and sales roles reward communication, experience and initiative, so CareerCompass uses grades with a small, career-specific weight and judges your future by skills, interests, experience and priorities.</p></div>
+<h2>Pipeline</h2><div class="c"><div class="flow"><span>Profile</span><i>→</i><span>Skill and experience scoring</span><i>→</i><span>RIASEC interest map</span><i>→</i><span>Career matching</span><i>→</i><span>Readiness forecast</span><i>→</i><span>90-day roadmap</span></div></div>
+<h2>Formulas</h2><div class="grid"><div class="c"><h3>Career match</h3><p><code>(1−g)·(0.45·Skills + 0.25·Interest + 0.15·Experience + 0.15·Priorities) + g·Grades</code>, where g is 0–10% depending on the career (e.g. 0% for entrepreneur, 10% for ML engineer).</p></div>
+<div class="c"><h3>Readiness</h3><p><code>0.55·SkillCoverage + 0.30·Experience + 0.15·InterestFit</code> for the top career.</p></div>
+<div class="c"><h3>Time to job-ready</h3><p>Hours needed = 40 per missing skill + experience gap, divided by your weekly hours. Readiness of 75+ is "job-ready".</p></div></div>
+<h2>Limitations &amp; future scope</h2><div class="c"><ul><li>Weights are expert-defined; future versions can learn them from placement data</li><li>Career list covers 19 common paths and can be extended in the data table</li><li>Future: live job-market trends, mentor matching, resume analysis, multi-language support</li></ul><p style="margin-top:8px">All calculations run in your browser; no data is sent anywhere.</p></div></section>
+</div>
+<script src="script.js"></script></body></html>
